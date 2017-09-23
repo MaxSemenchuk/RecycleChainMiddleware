@@ -6,8 +6,13 @@ const {
   DB_NAME,
   API_PORT,
   SALT,
+  ETH_NODE_URL,
+  ETH_NODE_PORT,
+  WALLET_API_URL,
+  WALLET_API_PORT,
 } = process.env;
 
+export * from './ABI';
 export {
   DB_HOST,
   DB_PORT,
@@ -16,4 +21,8 @@ export {
   DB_NAME,
   API_PORT,
   SALT,
+  ETH_NODE_URL,
+  ETH_NODE_PORT,
+  WALLET_API_URL,
+  WALLET_API_PORT,
 };

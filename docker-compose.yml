@@ -6,11 +6,11 @@ services:
     hostname: recicle-chain-db
     image: mysql:5.7
     volumes:
-      - db_data:/var/lib/mysql
+      - recicle_db_data:/var/lib/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: recicle-chain
+      MYSQL_DATABASE: recicle_chain
       MYSQL_USER: root
       MYSQL_PASSWORD: root
     ports:
@@ -21,6 +21,7 @@ services:
     build: ./
     volumes:
       - ./src:/var/www/recicle-chain-api/src
+      - ./docker:/var/www/recicle-chain-api/docker
     ports:
       - "3000:3000"
     env_file: "./docker/environments"
@@ -28,4 +29,4 @@ services:
       - db
 
 volumes:
-  db_data:
+  recicle_db_data:

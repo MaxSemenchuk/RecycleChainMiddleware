@@ -9,7 +9,7 @@ module.exports = [{
     },
     entities: ['src/models/*.ts'],
     migrations: ['src/migrations/*.ts'],
-    autoSchemaSync: false,
+    autoSchemaSync: true,
     cli: {
         migrationsDir: 'src/migrations'
     }

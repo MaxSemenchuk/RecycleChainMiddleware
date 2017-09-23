@@ -1,2 +1,5 @@
 export { AuthController } from './AuthController';
-export * from './WalletController';
+export { WalletController } from './WalletController';
+export { StockController } from './StockController';
+export { TransactionController } from './TransactionController';
+export { TrashTypeController } from './TrashTypeController';

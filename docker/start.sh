@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Make migrations
-node_modules/.bin/ts-node node_modules/typeorm/cli.js migrations:run --cf ormconfig.js
+# node_modules/.bin/ts-node node_modules/typeorm/cli.js migrations:run --cf ormconfig.js
 
 if [ "$NODE_ENV" = "development" ]; then
   npm run dev

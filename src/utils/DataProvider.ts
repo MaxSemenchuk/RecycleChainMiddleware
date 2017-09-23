@@ -19,6 +19,9 @@ class Provider {
         password: DB_PASSWORD,
         database: DB_NAME,
       },
+      logging: {
+        logQueries: true
+      }
     }).then((conn: Connection) => {
       this.connection = conn;
       return conn;
