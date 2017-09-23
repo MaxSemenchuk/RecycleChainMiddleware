@@ -10,4 +10,4 @@ DB_HOST=recicle-chain-db
 DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=root
-DB_NAME=lingviny
+DB_NAME=recicle-chain
